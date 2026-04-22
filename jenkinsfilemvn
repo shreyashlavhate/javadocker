@@ -17,7 +17,7 @@ pipeline{
     stages {
       stage('Release'){
         steps {
-          'archiveArtifacts artifacts:'target/*.jar'
+          archiveArtifacts artifacts:'target/*.jar'
         }
       }
     }
